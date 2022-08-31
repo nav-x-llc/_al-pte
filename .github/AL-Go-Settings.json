@@ -1,4 +1,16 @@
 {
   "type": "PTE",
-  "templateUrl": "https://github.com/microsoft/AL-Go-PTE@main"
+  "templateUrl": "https://github.com/microsoft/AL-Go-PTE@main",
+  "UseProjectDependencies": true,
+  "installOnlyReferencedApps": false,
+  "installApps": [],
+  "appDependencyProbingPaths": [
+    {
+      "repo": "https://github.com/nav-x-llc/nav-x-library",
+      "version": "latest",
+      "release_status": "release",
+      "projects": "*",
+      "AuthTokenSecret": "githubToken"
+    }
+  ]
 }
