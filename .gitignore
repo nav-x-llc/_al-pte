@@ -1,9 +1,13 @@
 *.app
 *.flf
-TestResults.xml
+TestResults*.xml
 BuildOutput.txt
+bcptTestResults*.json
 rad.json
 .output
+.dependencies
+.buildartifacts
 .alcache/
 .altemplates/
 cache_*
+NewBcContainer.ps1
