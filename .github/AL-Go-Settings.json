@@ -1,7 +1,5 @@
 {
     "type":  "PTE",
-    "templateUrl":  "https://github.com/microsoft/AL-Go-PTE@preview"
-}
     "templateUrl":  "https://github.com/microsoft/AL-Go-PTE@preview",
     "nextMajorSchedule":  "0 0 1 * *",
     "nextMinorSchedule":  "0 1 1 * *",
