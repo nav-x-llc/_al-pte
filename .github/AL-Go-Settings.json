@@ -1,5 +1,3 @@
-AL-Go-Settings
-
 {
     "type":  "PTE",
     "templateUrl":  "https://github.com/microsoft/AL-Go-PTE@preview"
