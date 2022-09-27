@@ -1,9 +1,27 @@
 {
     "country":  "us",
+    "repoVersion": "",
+    "keyVaultName": "nav-x-development",
+    "licenseFileUrlSecretName": "LicenseFile",
+    "codeSignCertificateUrlSecretName": "CodeSignPfxFile",
+    "codeSignCertificatePasswordSecretName": "CodeSignPfxPassword",
+    "storageContextSecretName": "StorageContext",
+    "insiderSasTokenSecretName": "InsiderToken",
+    "ghTokenWorkflowSecretName": "ghTokenWorkflow",
     "appFolders":  [
     ],
     "testFolders":  [
     ],
     "bcptTestFolders":  [
-    ]
+    ],
+    "appDependencyProbingPaths": [
+        {
+            "repo": "https://github.com/nav-x-llc/nav-x-library",
+            "version": "latest",
+            "release_status": "release",
+            "projects": "*",
+            "AuthTokenSecret": "githubToken"
+        }
+    ],
+    "versioningStrategy": 16
 }
