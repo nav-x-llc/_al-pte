@@ -1,6 +1,5 @@
 {
     "country":  "us",
-    "repoVersion": "",
     "keyVaultName": "nav-x-development",
     "licenseFileUrlSecretName": "LicenseFile",
     "codeSignCertificateUrlSecretName": "CodeSignPfxFile",
@@ -21,5 +20,5 @@
             "AuthTokenSecret": "githubToken"
         }
     ],
-    "versioningStrategy": 16
+    "versioningStrategy": 0
 }
