@@ -1,12 +1,5 @@
 {
     "country":  "us",
-    "keyVaultName": "nav-x-development",
-    "licenseFileUrlSecretName": "LicenseFile",
-    "codeSignCertificateUrlSecretName": "CodeSignPfxFile",
-    "codeSignCertificatePasswordSecretName": "CodeSignPfxPassword",
-    "storageContextSecretName": "StorageContext",
-    "insiderSasTokenSecretName": "InsiderToken",
-    "ghTokenWorkflowSecretName": "ghTokenWorkflow",
     "appFolders":  [
     ],
     "testFolders":  [
@@ -21,6 +14,5 @@
             "projects": "*",
             "AuthTokenSecret": "githubToken"
         }
-    ],
-    "versioningStrategy": 0
+    ]
 }
