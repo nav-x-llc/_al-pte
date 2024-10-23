@@ -1,0 +1,15 @@
+name: Notifiy users based on issue labels
+
+on:
+  issues:
+    types: [labeled]
+
+jobs:
+  notify:
+    runs-on: self-hosted
+    steps:
+      - name: Notify Users
+        uses: jenschelkopf/issue-label-notification-action@1.3
+        with:
+          recipients: |
+            Fix Ready=@pzentner
