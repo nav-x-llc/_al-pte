@@ -12,5 +12,18 @@
       "projects": "*",
       "AuthTokenSecret": "githubToken"
     }
-  ]
+  ],
+  "deployToProduction": {
+    "EnvironmentName": "Production",
+    "DependencyInstallMode": "upgrade",
+    "Branches": [
+      "main"
+    ]
+  },
+  "deployToUAT": {
+    "DependencyInstallMode": "forceUpgrade"
+  },
+  "deployToTEST": {
+    "DependencyInstallMode": "forceUpgrade"
+  }
 }
