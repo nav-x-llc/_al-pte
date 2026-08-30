@@ -12,5 +12,6 @@
       "projects": "*",
       "AuthTokenSecret": "githubToken"
     }
-  ]
+  ],
+  "templateSha": "b7dd1f32feb254e07086096e8970fba1187d9a6e"
 }
