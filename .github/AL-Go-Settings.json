@@ -1,7 +1,6 @@
 {
   "type": "PTE",
   "templateUrl": "https://github.com/microsoft/AL-Go-PTE@main",
-  "UseProjectDependencies": true,
   "installOnlyReferencedApps": false,
   "installApps": [],
   "appDependencyProbingPaths": [
@@ -12,5 +11,54 @@
       "projects": "*",
       "AuthTokenSecret": "githubToken"
     }
-  ]
+  ],
+  "ghTokenWorkflow": "GhTokenWorkflow",
+  "deployToUAT": {
+    "EnvironmentName": "UAT",
+    "DependencyInstallMode": "upgrade",
+    "Branches": [
+      "release/*"
+    ],
+    "continuousDeployment": true
+  },
+  "deployToTEST": {
+    "EnvironmentName": "TEST",
+    "DependencyInstallMode": "upgrade",
+    "Branches": [
+      "internal-test"
+    ],
+    "continuousDeployment": true
+  },
+  "deployToProduction": {
+    "EnvironmentName": "Production",
+    "DependencyInstallMode": "upgrade",
+    "Branches": [
+      "main"
+    ],
+    "continuousDeployment": false
+  },
+  "CICDPushBranches": [
+    "main",
+    "release/*",
+    "feature/*",
+    "internal-test"
+  ],
+  "CICDPullRequestBranches": [
+    "main",
+    "feature/*",
+    "internal-test",
+    "deploy/*"
+  ],
+  "ConditionalSettings": [
+    {
+      "branches": [
+        "feature/*"
+      ],
+      "settings": {
+        "skipUpgrade": true
+      }
+    }
+  ],
+  "useProjectDependencies": true,
+  "useCompilerFolder": true
 }
